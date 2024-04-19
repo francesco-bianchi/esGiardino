@@ -34,11 +34,11 @@ public class Giardino {
         String name = Thread.currentThread().getName();
         if(ingresso == 'a'){
             ingressoA++;
-            System.out.println(name + " esce dall'ingresso A");
+            System.out.println(name + " esce da: " + ingresso);
         }
         else{
             ingressoB++;
-            System.out.println(name + " esce dall'ingresso B");
+            System.out.println(name + " esce da: " + ingresso);
         }
         notifyAll();
     }

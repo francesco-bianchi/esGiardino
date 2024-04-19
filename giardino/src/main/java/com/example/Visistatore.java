@@ -2,11 +2,10 @@ package com.example;
 
 public class Visistatore extends Thread{
     private Giardino g;
-    private int matricola;
 
-    public Visistatore(Giardino g, int matricola) {
+    public Visistatore(String nome, Giardino g) {
+        super(nome);
         this.g = g;
-        this.matricola = matricola;
     }
 
     public void run(){
